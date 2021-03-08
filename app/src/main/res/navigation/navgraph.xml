@@ -20,7 +20,16 @@
         android:label="fragment_fragment2"
         tools:layout="@layout/fragment_fragment2" >
         <action
-            android:id="@+id/action_fragment2_to_startgame"
+            android:id="@+id/action_fragment2_to_fragment3"
+            app:destination="@id/fragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment3"
+        android:name="com.example.navigationtake2.fragment3"
+        android:label="fragment_fragment3"
+        tools:layout="@layout/fragment_fragment3" >
+        <action
+            android:id="@+id/action_fragment3_to_startgame"
             app:destination="@id/startgame" />
     </fragment>
 </navigation>
